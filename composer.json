@@ -1,6 +1,16 @@
 {
-    "require": {
-        "slim/slim": "2.6",
-        "ccampbell/chromephp": "^4.1"
+  "require": {
+    "slim/slim": "2.6",
+    "ccampbell/chromephp": "^4.1"
+  },
+  "autoload": {
+    "files": [
+      "function.php"
+    ],
+    "psr-4": {
+      "Admin\\": "application/admin",
+      "Common\\": "application/common",
+      "Home\\": "application/home"
     }
+  }
 }

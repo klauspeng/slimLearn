@@ -7,13 +7,8 @@ define('HOME_PATH', APP_PATH . 'home' . DIRECTORY_SEPARATOR);
 
 require ROOT_PATH . 'vendor/autoload.php';
 
-function debug($content)
-{
-    \ChromePhp::info($content);
-}
-
 $app = new \Slim\Slim();
 
-var_dump($app->request());exit();
+$app->get('/','Home\controller\Index:test');
 
 $app->run();
